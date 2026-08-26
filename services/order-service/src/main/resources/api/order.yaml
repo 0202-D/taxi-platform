@@ -1,0 +1,47 @@
+openapi: 3.0.3
+info:
+  title: Taxi Service API
+  version: 1.0.0
+paths: {}
+components:
+  schemas:
+    Order:
+      type: object
+      required:
+        - pickupAddress
+        - destinationAddress
+        - price
+        - status
+      properties:
+        id:
+          type: integer
+          format: int64
+          description: Уникальный идентификатор заказа
+          example: 10042
+        pickupAddress:
+          type: string
+          description: Адрес подачи машины
+          example: "ул. Ленина, д. 10"
+        destinationAddress:
+          type: string
+          description: Куда едем
+          example: "Аэропорт Шереметьево, Терминал B"
+        price:
+          type: number
+          description: Стоимость поездки
+          example: 750.50
+        status:
+          type: string
+          description: Статус заказа
+          enum:
+            - CREATED
+            - SEARCHING_DRIVER
+            - DRIVER_ASSIGNED
+            - IN_PROGRESS
+            - COMPLETED
+            - CANCELLED
+          example: "SEARCHING_DRIVER"
+        createdAt:
+          type: string
+          format: date-time
+          description: Время создания заказа

@@ -1,0 +1,69 @@
+# =========================
+# IntelliJ IDEA
+# =========================
+
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# =========================
+# Java / Maven
+# =========================
+
+**/target/
+*.class
+
+# Maven wrapper JAR
+# Keep mvnw, mvnw.cmd and .mvn/wrapper/maven-wrapper.properties
+# Do not commit the downloaded wrapper jar if generated locally
+.mvn/wrapper/maven-wrapper.jar
+
+# =========================
+# Logs
+# =========================
+
+*.log
+logs/
+
+# =========================
+# OS
+# =========================
+
+.DS_Store
+Thumbs.db
+
+# =========================
+# Environment / secrets
+# =========================
+
+.env
+.env.*
+!.env.example
+
+# Local configuration
+**/application-local.yml
+**/application-local.yaml
+**/application-local.properties
+
+# =========================
+# Docker
+# =========================
+
+docker-compose.override.yml
+
+# =========================
+# Kubernetes local files
+# =========================
+
+*.secret.yaml
+*.secret.yml
+
+# =========================
+# Temporary files
+# =========================
+
+*.tmp
+*.temp
+*.swp
+*.swo
