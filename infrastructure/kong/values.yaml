@@ -1,0 +1,24 @@
+gateway:
+  enabled: true
+
+  deployment:
+    kong:
+      enabled: true
+
+  env:
+    role: traditional
+    database: "off"
+
+controller:
+  enabled: true
+
+  deployment:
+    kong:
+      enabled: false
+
+  ingressController:
+    enabled: true
+
+    gatewayDiscovery:
+      enabled: true
+      generateAdminApiService: true
