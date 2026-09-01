@@ -1,0 +1,15 @@
+services:
+
+  order-service:
+    image: taxi/order-service:0.0.1
+    container_name: order-service
+    ports:
+      - "8282:8282"
+    environment:
+      KAFKA_BOOTSTRAP_SERVERS: kafka:9092
+    networks:
+      - taxi-platform
+networks:
+  taxi-platform:
+    external: true
+    name: taxi-platform
