@@ -23,5 +23,15 @@ spec:
               value: admin
             - name: KC_BOOTSTRAP_ADMIN_PASSWORD
               value: admin
+
+            - name: KC_DB
+              value: postgres
+            - name: KC_DB_URL
+              value: jdbc:postgresql://keycloak-postgres:5432/keycloak
+            - name: KC_DB_USERNAME
+              value: keycloak
+            - name: KC_DB_PASSWORD
+              value: keycloak
+
           ports:
             - containerPort: 8080
