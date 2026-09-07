@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: taxi-web
+
+  security:
+    oauth2:
+      client:
+        registration:
+          keycloak:
+            client-id: taxi-web
+            authorization-grant-type: authorization_code
+            scope:
+              - openid
+              - profile
+              - email
+            redirect-uri: "{baseUrl}/login/oauth2/code/{registrationId}"
+
+        provider:
+          keycloak:
+            issuer-uri: http://localhost:8080/realms/taxi
+
+server:
+  port: 3001
+
+vaadin:
+  launch-browser: true
