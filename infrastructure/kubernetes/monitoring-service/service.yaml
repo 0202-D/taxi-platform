@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: order-service
-  namespace: taxi-platform
+  name: monitoring-service
+  namespace: monitoring-platform
 spec:
   selector:
-    app: order-service
+    app: monitoring-service
   ports:
     - name: http
       port: 8282

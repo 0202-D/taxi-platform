@@ -33,9 +33,9 @@ services:
       KAFKA_NUM_PARTITIONS: 3
 
     networks:
-      - taxi-platform
+      - monitoring-platform
 
 
 networks:
-  taxi-platform:
-    name: taxi-platform
+  monitoring-platform:
+    name: monitoring-platform

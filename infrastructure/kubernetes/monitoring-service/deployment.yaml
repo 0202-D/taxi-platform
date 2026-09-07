@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: order-service
-  namespace: taxi-platform
+  name: monitoring-service
+  namespace: monitoring-platform
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: order-service
+      app: monitoring-service
   template:
     metadata:
       labels:
-        app: order-service
+        app: monitoring-service
     spec:
       containers:
-        - name: order-service
-          image: taxi/order-service:0.0.1
+        - name: monitoring-service
+          image: monitoring/monitoring-service:0.0.1
           imagePullPolicy: Never
           ports:
             - containerPort: 8282

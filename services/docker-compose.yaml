@@ -1,15 +1,15 @@
 services:
 
-  order-service:
-    image: taxi/order-service:0.0.1
-    container_name: order-service
+  monitoring-service:
+    image: monitoring/monitoring-service:0.0.1
+    container_name: monitoring-service
     ports:
       - "8282:8282"
     environment:
       KAFKA_BOOTSTRAP_SERVERS: kafka:9092
     networks:
-      - taxi-platform
+      - monitoring-platform
 networks:
-  taxi-platform:
+  monitoring-platform:
     external: true
-    name: taxi-platform
+    name: monitoring-platform
