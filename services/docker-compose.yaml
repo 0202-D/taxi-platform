@@ -1,6 +1,9 @@
 services:
 
   monitoring-service:
+    build:
+      context: ./monitoring-service
+      dockerfile: Dockerfile
     image: monitoring/monitoring-service:0.0.1
     container_name: monitoring-service
     ports:
@@ -9,6 +12,7 @@ services:
       KAFKA_BOOTSTRAP_SERVERS: kafka:9092
     networks:
       - monitoring-platform
+
 networks:
   monitoring-platform:
     external: true

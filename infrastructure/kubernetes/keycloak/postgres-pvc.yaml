@@ -2,7 +2,7 @@ apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   name: keycloak-postgres-pvc
-  namespace: taxi-platform
+  namespace: monitoring-platform
 spec:
   accessModes:
     - ReadWriteOnce

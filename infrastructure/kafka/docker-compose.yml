@@ -38,4 +38,5 @@ services:
 
 networks:
   monitoring-platform:
+    external: true
     name: monitoring-platform

@@ -1,13 +1,13 @@
-package ru.petrov.order_service;
+package ru.petrov.monitoring_service;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class OrderServiceApplication {
+public class MonitoringServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(OrderServiceApplication.class, args);
+		SpringApplication.run(MonitoringServiceApplication.class, args);
 	}
 
 }

@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: keycloak-postgres
-  namespace: taxi-platform
+  namespace: monitoring-platform
 spec:
   replicas: 1
   selector:

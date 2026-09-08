@@ -1,4 +1,4 @@
-package ru.petrov.order_service;
+package ru.petrov.monitoring_service;
 
 import org.springframework.resilience.annotation.Retryable;
 import org.springframework.web.bind.annotation.GetMapping;

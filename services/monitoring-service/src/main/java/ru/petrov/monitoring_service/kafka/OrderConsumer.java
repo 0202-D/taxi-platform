@@ -1,4 +1,4 @@
-package ru.petrov.order_service.kafka;
+package ru.petrov.monitoring_service.kafka;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
