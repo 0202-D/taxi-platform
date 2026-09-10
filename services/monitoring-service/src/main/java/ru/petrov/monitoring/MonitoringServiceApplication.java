@@ -1,4 +1,4 @@
-package ru.petrov.monitoring_service;
+package ru.petrov.monitoring;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
